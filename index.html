@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valk314 - Blockchain Banking Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+        }
+        .feature-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold">Valk314</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="hover:text-blue-300 transition">Features</a>
+                    <a href="#about" class="hover:text-blue-300 transition">About</a>
+                    <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+                    <a href="https://github.com/pielancer314/valk314" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        Next-Gen Blockchain Banking
+                    </h1>
+                    <p class="text-xl mb-8">
+                        Secure, autonomous, and efficient banking powered by blockchain technology.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#features" class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg transition">
+                            Get Started
+                        </a>
+                        <a href="https://github.com/pielancer314/valk314" class="border border-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-lg transition">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="animate-float">
+                        <img src="https://raw.githubusercontent.com/pielancer314/valk314/gh-pages/assets/blockchain-illustration.svg" 
+                             alt="Blockchain Banking" 
+                             class="w-full"
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNDAgMjQwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIwIDI0MEMxODYuMjc0IDI0MCAyNDAgMTg2LjI3NCAyNDAgMTIwUzE4Ni4yNzQgMCAxMjAgMCAwIDUzLjcyNiAwIDEyMHM1My43MjYgMTIwIDEyMCAxMjB6Ii8+PHBhdGggZmlsbD0iIzFhMzY1ZCIgZD0iTTEyMCAyNDBDMTg2LjI3NCAyNDAgMjQwIDE4Ni4yNzQgMjQwIDEyMFMxODYuMjc0IDAgMTIwIDAgMCA1My43MjYgMCAxMjBzNTMuNzI2IDEyMCAxMjAgMTIwek0xMjAgMjBjNTUuMjI4IDAgMTAwIDQ0Ljc3MiAxMDAgMTAwcy00NC43NzIgMTAwLTEwMCAxMDBTMjAgMTc1LjIyOCAyMCAxMjAgNjQuNzcyIDIwIDEyMCAyMHoiLz48L3N2Zz4='">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Secure Transactions</h3>
+                    <p class="text-gray-600">
+                        Advanced encryption and blockchain technology ensure your transactions are secure and immutable.
+                    </p>
+                </div>
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Autonomous Banking</h3>
+                    <p class="text-gray-600">
+                        Smart contracts and AI-powered systems automate your banking operations efficiently.
+                    </p>
+                </div>
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Advanced Analytics</h3>
+                    <p class="text-gray-600">
+                        Real-time analytics and insights to help you make informed financial decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">About Valk314</h2>
+                    <p class="text-gray-600 mb-6">
+                        Valk314 is a cutting-edge blockchain banking platform that combines the security of blockchain 
+                        technology with the efficiency of autonomous banking systems. Our platform provides a comprehensive 
+                        suite of financial services powered by smart contracts and advanced analytics.
+                    </p>
+                    <p class="text-gray-600">
+                        Built with modern technologies and best practices, Valk314 aims to revolutionize the banking 
+                        industry by making financial services more accessible, secure, and efficient.
+                    </p>
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl font-bold text-blue-500 mb-2">100%</div>
+                            <div class="text-gray-600">Secure Transactions</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl font-bold text-blue-500 mb-2">24/7</div>
+                            <div class="text-gray-600">System Availability</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl font-bold text-blue-500 mb-2">Fast</div>
+                            <div class="text-gray-600">Processing Speed</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl font-bold text-blue-500 mb-2">Smart</div>
+                            <div class="text-gray-600">Contract Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="name">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="message">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold">Valk314</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/pielancer314/valk314" class="hover:text-blue-300 transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-300 transition">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-300 transition">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 Valk314. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
